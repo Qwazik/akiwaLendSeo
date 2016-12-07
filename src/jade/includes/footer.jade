@@ -1,0 +1,63 @@
+// футер
+.page__footer
+	.container
+		section
+			.section__header.color-white
+				.left
+					h2 Заявка
+				.right
+					.big Хотите узнать стоимость поискового продвижения? <br> Мы подберем оптимальное решение по параметрам вашего бизнеса
+			.main-form__wrap
+				.lock Ваши данные находятся в безопасности  и  не будут переданы третьим людям.
+				form(action="#").clearfix.main-form
+					.column
+						label
+							span Ваше имя
+							input(type="text", placeholder="Имя" required)
+						label
+							span Ваш телефон
+							input(type="text", placeholder="+7(___)-___-__-__", name="phone" required)
+						label
+							span Ваш сайт
+							input(type="text", name="site", placeholder="www.")
+					.column
+						label.nomargin
+							span Ваше сообщение
+							textarea(name="", placeholder="Комментарий")
+						i.note * Поля обязтельные для заполнения
+						button(type="submit").btn.btn--red Расчитать
+
+	footer.main-footer
+		.container
+			.row
+				.col-xs-3
+					a(href="/"): img.main-footer__logo(src="img/logo.png", alt="")
+					.copyright ©  2016 ООО «Акива» 
+				.col-xs-3.column2
+					span Akiwa.ru
+					span продвижение <br> и оптимизация сайтов.
+				.col-xs-3.ta-center
+					ul.social
+						li: a(href="#")
+							i.icon-vkontakte
+						li: a(href="#")
+							i.icon-facebook
+						li: a(href="#")
+							i.icon-instagram
+				.col-xs-3.main-footer__phones
+					span Бесплатно по России
+					span.tel 8 800 200 47 80
+// футер конец
+// всплывающая форма
+#modal.modal
+	form(action="")
+		p.big.ta-center Заполните<br> и мы перезвоним
+		input(type="hidden", name="subject", value="Обратный звонок")
+		label
+			i.icon-user
+			input(type="text", name="name")
+		label
+			i.icon-phone
+			input(type="text", name="phone")
+		button(type="submit").btn.btn--red Отправить 
+// всплывающая форма конец

@@ -1,4 +1,134 @@
 extends _template
 
 block main
+	// seo
+	.page__seo
+		.container
+			section.seo
+				.row
+					.col-xs-6.seo__left
+						h2 seo
+						p SEO-продвижение содержит в себе целый комплекс мероприятий, способных повысить посещаемость сайта по целевым запросам и приумножить количество заявок и звонков от самых лояльных покупателей в интернете – тех, кто пришел на ваш сайт сам. Поисковое продвижение позволяет обеспечивать масштабный объем посетителей, и, в сравнении с иными рекламными инструментами, имеет ряд особых преимуществ.
+						a(href="").btn Начать сотрудничество
+					.col-xs-6.seo__right
+						p.big Компания «Акива» предлагает вам услуги <br> по продвижению сайта и обеспечивает:
+						ul.seo__features-list
+							li
+								span.icon-wrap: span.icon.icon-seo1
+								span высококачественный сервис;
+							li
+								span.icon-wrap: span.icon.icon-seo2
+								span самые выгодные условия продвижения сайтов;
+							li
+								span.icon-wrap: span.icon.icon-seo3
+								span бонусы;
+							li
+								span.icon-wrap: span.icon.icon-seo4
+								span комплексный подход;
+							li
+								span.icon-wrap: span.icon.icon-seo1
+								span наличие собственной технической поддержки.
+	// seo конец 
+	// тарифы 
+	.page__tarifs
+		section.container.tarifs.nopdtop
+			h2 Тарифы продвижения
+			.tarifs__table
+				.decorate
+				.tarifs__list.clearfix
+					.tarifs__item.mark
+						p.big Продвижение сайта с оплатой за позиции
+						p.desc Наши специалисты проанализируют ваш сайт и подберут список наиболее эффективных поисковых запросов для продвижения в Yandex и Google. Оплата осуществляется за нахожден…
+						p.price
+							| от
+							b 30 000
+							| руб.
+						span.period за месяц обслуживания
+					.tarifs__item
+						p.big Продвижение сайта с оплатой за трафик
+						p.desc Даёт возможность привлечь на сайт максимальное количество посетителей из поисковых систем по минимальной цене за переход. Данный тип продвижения подходит только …
+						p.price
+							| от
+							b 50 000
+							| руб.
+						span.period за месяц обслуживания
+					.tarifs__item
+						p.big Продвижение полноценных интеренет-магазинов
+						p.desc Позволяет увеличить клиентскую базу путём продвижения больших групп поисковых запросов и постоянной работы по внутренней оптимизации сайта. Подходит только полн…
+						p.price
+							| от
+							b 60 000
+							| руб.
+						span.period за месяц обслуживания
+					.tarifs__item
+						p.big Продвижение молодых сайтов
+						p.desc eсли вы недавно создали свой сайт или ранее никогда не сталкивались с поисковой оптимизацией, мы поможем       осуществить комплекс мер по подготовке и продвижению ваше…
+						p.price
+							| от
+							b 30 000
+							| руб.
+						span.period за месяц обслуживания
+	// тарифы конец
+	// достижения
+	.page__achivements
+		.container
+			section.achivements
+				.section__header.color-white
+					.left
+						h2 Достижения
+					.right
+						.big Рабочие кейсы клиентов которые <br> поставили на нас и не прогадали
+				.achivements__slider.achivements-slider__wrap
+					.achivements-slider__controls
+						a(href="#").prev Предыдущий
+						a(href="#").next Следующий
+					.achivements-slider
+						-for(i=0;i<2;i++)
+							.achivements-slider__item
+								.achivements-slider__inner
+									.column
+										.achivements-slider__company
+											.logo
+												img(src="img/ach-logo.png", alt="")
+											.info
+												.big Союз 32
+												a(href="#").url www.soyz32.ru
+										p.desc Стоматологическая клиника «Союз» специализируется исключительно на оказании стоматологических услуг взрослому и детскому населению в Брянске, а также зуботехническом производстве.
+										.achivements-slider__footer.achivements-slider__footer--left
+											span.label.label--gray Период сотрудничества
+											span февраль 2015 - сентябрь 2016
+									.column
+										.label.label--gray Продвижение по 72 запросам
+										.achivements-slider__stat.position-table
+											.position-table__row
+												span.position-table__keyword Отбеливание зубов
+												span.position-table__position 1
+											.position-table__row
+												span.position-table__keyword Стоматологическая клиника
+												span.position-table__position 1
+											.position-table__row
+												span.position-table__keyword Стоматологические клиники в брянске
+												span.position-table__position 8
+										.achivements-slider__footer.achivements-slider__footer--right
+											.left
+												p +92%
+												p Рост посещаемости
+											.right
+												.achivements-slider__final
+													p 72% запросов 
+													p в ТОП 10
+	// достижения конец
+	// Партнеры 
+	.page__partners
+		.container
+			section.partners
+				.section__header
+					.left
+						h2 Нам доверяют
+					.right
+						.big Наши главные достижения - клиенты,<br> довольные результатами нашей работы
+				ul.partners__list.clearfix
+					-for(i=1;i<=8;i++)
+						li: img(src="img/partners"+i+".png", alt="")
+	// Партнеры конец
 	
